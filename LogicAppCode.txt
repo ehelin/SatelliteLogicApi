@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+    "actions": {
+        "Http": {
+            "conditions": [],
+            "inputs": {
+                "body": "\"Load\"=",
+                "headers": {
+                    "Authorization": "inserttokenhere",
+                    "Content-Type": "application/json"
+                },
+                "method": "POST",
+                "uri": "http://XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.azurewebsites.net/api/DataLoad"
+            },
+            "type": "Http"
+        }
+    },
+    "contentVersion": "1.0.0.0",
+    "outputs": {},
+    "parameters": {},
+    "triggers": {
+        "recurrence": {
+            "recurrence": {
+                "frequency": "Hour",
+                "interval": 1
+            },
+            "type": "Recurrence"
+        }
+    }
+}

@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SatelliteLogicApi", "SatelliteLogicApi\SatelliteLogicApi.csproj", "{EBFCB551-803D-4FBE-825E-038E4B6EA2A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{30ACD7D1-7060-4196-A3E4-0648BB392D70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceDatabase", "Database\SourceDatabase.csproj", "{70B57391-BBA4-467D-A39C-C5D2B925F5ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DestinationDatabase", "DestinationDatabase\DestinationDatabase.csproj", "{1EA75DB2-1FF3-48FF-834F-3B06BE7945D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LogicAppCode", "LogicAppCode", "{2EAF465B-49DF-48DC-89F9-833A769C2320}"
+	ProjectSection(SolutionItems) = preProject
+		LogicAppCode.txt = LogicAppCode.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Driver", "Driver\Driver.csproj", "{FE35AFDD-C37A-4358-9D83-BE47A1C4A860}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadData", "LoadData\LoadData.csproj", "{9CEA1759-90FA-421F-A2E7-0A3E322E65E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBFCB551-803D-4FBE-825E-038E4B6EA2A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBFCB551-803D-4FBE-825E-038E4B6EA2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBFCB551-803D-4FBE-825E-038E4B6EA2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBFCB551-803D-4FBE-825E-038E4B6EA2A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30ACD7D1-7060-4196-A3E4-0648BB392D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30ACD7D1-7060-4196-A3E4-0648BB392D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30ACD7D1-7060-4196-A3E4-0648BB392D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30ACD7D1-7060-4196-A3E4-0648BB392D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70B57391-BBA4-467D-A39C-C5D2B925F5ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B57391-BBA4-467D-A39C-C5D2B925F5ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B57391-BBA4-467D-A39C-C5D2B925F5ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70B57391-BBA4-467D-A39C-C5D2B925F5ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EA75DB2-1FF3-48FF-834F-3B06BE7945D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EA75DB2-1FF3-48FF-834F-3B06BE7945D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EA75DB2-1FF3-48FF-834F-3B06BE7945D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EA75DB2-1FF3-48FF-834F-3B06BE7945D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE35AFDD-C37A-4358-9D83-BE47A1C4A860}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE35AFDD-C37A-4358-9D83-BE47A1C4A860}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE35AFDD-C37A-4358-9D83-BE47A1C4A860}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE35AFDD-C37A-4358-9D83-BE47A1C4A860}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CEA1759-90FA-421F-A2E7-0A3E322E65E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CEA1759-90FA-421F-A2E7-0A3E322E65E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CEA1759-90FA-421F-A2E7-0A3E322E65E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CEA1759-90FA-421F-A2E7-0A3E322E65E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
