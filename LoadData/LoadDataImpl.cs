@@ -73,7 +73,7 @@ namespace LoadData
                         cu.Created = srcUpdate.Created;
                         cu.Type = srcUpdate.Type;
                         cu.DbId = srcUpdate.Id;
-                        dd.InsertClientUpdate(cu);
+                        InsertClientUpdate(cu);
                     }
                     else
                     {
@@ -81,7 +81,7 @@ namespace LoadData
                         su.Created = srcUpdate.Created;
                         su.Type = srcUpdate.Type;
                         su.DbId = srcUpdate.Id;
-                        dd.InsertStatusUpdate(su);
+                        InsertStatusUpdate(su);
                     }
 
                     ctr++;
@@ -89,6 +89,70 @@ namespace LoadData
             }
 
             return done;
+        }
+
+        private void InsertClientUpdate(ClientUpdate cu)
+        {
+            IDestinationDatabase dd = new DestinationDatabase.DestinationDatabase();
+            bool loaded = false;
+            int errorRetry = 0;
+
+            while (!loaded)
+            {
+                try
+                {
+                    dd.InsertClientUpdate(cu);
+                    loaded = true;
+                }
+                catch (Exception e)
+                {
+                    if (errorRetry > DestinationDbConstants.MAX_ERROR_RETRY)
+                    {
+                        RecordInterationError(e.Message);
+                        throw new Exception("Cannot continue.  Error: " + e.Message);
+                    }
+                    else
+                    {
+                        errorRetry++;
+                    }
+                }
+                finally
+                {
+                    //nothing to close out?
+                }
+            }
+        }
+
+        private void InsertStatusUpdate(StatusUpdate su)
+        {
+            IDestinationDatabase dd = new DestinationDatabase.DestinationDatabase();
+            bool loaded = false;
+            int errorRetry = 0;
+
+            while (!loaded)
+            {
+                try
+                {
+                    dd.InsertStatusUpdate(su);
+                    loaded = true;
+                }
+                catch (Exception e)
+                {
+                    if (errorRetry > DestinationDbConstants.MAX_ERROR_RETRY)
+                    {
+                        RecordInterationError(e.Message);
+                        throw new Exception("Cannot continue.  Error: " + e.Message);
+                    }
+                    else
+                    {
+                        errorRetry++;
+                    }
+                }
+                finally
+                {
+                    //nothing to close out?
+                }
+            }
         }
     }
 }

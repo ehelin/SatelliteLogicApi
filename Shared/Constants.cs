@@ -19,7 +19,9 @@ namespace Shared
     }
     public class DestinationDbConstants
     {
-        public const string DB_CONNECTION = "Data Source=HOU8320-DT01;Initial Catalog=Satellite;Integrated Security=true;";
+        public const int MAX_ERROR_RETRY = 5;
+
+        public const string DB_CONNECTION = "Data Source=;Initial Catalog=Satellite;Integrated Security=true;";
 
         public const string SQL_INSERT_CLIENT_UPDATE = "INSERT INTO [dbo].[SatelliteClientUpdatev3]   "
                                                            + "     ([id]   "
