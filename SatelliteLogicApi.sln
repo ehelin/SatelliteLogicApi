@@ -20,6 +20,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Driver", "Driver\Driver.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadData", "LoadData\LoadData.csproj", "{9CEA1759-90FA-421F-A2E7-0A3E322E65E5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sql", "Sql", "{AEEB8DD6-A417-42FE-91E1-7F6869DE6EBD}"
+	ProjectSection(SolutionItems) = preProject
+		Sql\ClientUpdate.sql = Sql\ClientUpdate.sql
+		Sql\StatusUpdate.sql = Sql\StatusUpdate.sql
+		Sql\ViewQueries.sql = Sql\ViewQueries.sql
+		Sql\WarehouseLoads.sql = Sql\WarehouseLoads.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
